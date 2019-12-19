@@ -3569,19 +3569,19 @@ $ui_diff tag conf d_info -foreground blue -font font_diffbold
 
 $ui_diff tag conf d_cr -elide true
 $ui_diff tag conf d_@ -font font_diffbold
-$ui_diff tag conf d_+ -foreground {#00a000}
+$ui_diff tag conf d_+ -foreground {#50fa7b}
 $ui_diff tag conf d_- -foreground red
 
-$ui_diff tag conf d_++ -foreground {#00a000}
+$ui_diff tag conf d_++ -foreground {#50fa7b}
 $ui_diff tag conf d_-- -foreground red
 $ui_diff tag conf d_+s \
-	-foreground {#00a000} \
+	-foreground {#50fa7b} \
 	-background {#e2effa}
 $ui_diff tag conf d_-s \
 	-foreground red \
 	-background {#e2effa}
 $ui_diff tag conf d_s+ \
-	-foreground {#00a000} \
+	-foreground {#50fa7b} \
 	-background ivory1
 $ui_diff tag conf d_s- \
 	-foreground red \
