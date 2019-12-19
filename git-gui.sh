@@ -3279,7 +3279,7 @@ textframe .vpane.files.index -height 100 -width 200
 tlabel .vpane.files.index.title \
 	-text [mc "Staged Changes (Will Commit)"] \
 	-background lightgreen -foreground black
-ttext $ui_index -background white -foreground black \
+ttext $ui_index -background {#282a36} -foreground {#f8f8f2} \
 	-borderwidth 0 \
 	-width 20 -height 10 \
 	-wrap none \
