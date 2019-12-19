@@ -3414,7 +3414,7 @@ if {![is_enabled nocommit]} {
 }
 
 textframe .vpane.lower.commarea.buffer.frame
-ttext $ui_comm -background white -foreground black \
+ttext $ui_comm -background {#282a36} -foreground {#f8f8f2} \
 	-borderwidth 1 \
 	-undo true \
 	-maxundo 20 \
