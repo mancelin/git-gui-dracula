@@ -46,7 +46,7 @@ proc InitTheme {} {
 		ttk::style layout Edged.Entry [ttk::style layout TEntry]
 		ttk::style map Edged.Entry {*}[ttk::style map TEntry]
 		ttk::style configure Edged.Entry {*}[ttk::style configure TEntry] \
-			-fieldbackground lightgreen
+			-fieldbackground {#50fa7b}
 		ttk::style map Edged.Entry -fieldbackground {
 			{pressed !disabled} lightpink
 		}
@@ -73,7 +73,7 @@ proc InitTheme {} {
 		}
 
 		ttk::style configure Edged.Entry {*}[ttk::style configure TEntry] \
-			-background lightgreen -padding 0 -borderwidth 0
+			-background {#50fa7b} -padding 0 -borderwidth 0
 		ttk::style map Edged.Entry {*}[ttk::style map TEntry] \
 			-background {{pressed !disabled} lightpink}
 	}
@@ -307,7 +307,7 @@ proc tentry_widgetproc {w cmd args} {
 				if {[lsearch -exact $args pressed] != -1} {
 					_$w configure -background lightpink
 				} else {
-					_$w configure -background lightgreen
+					_$w configure -background {#50fa7b}
 				}
 			}
 		}

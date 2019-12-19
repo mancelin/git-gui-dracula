@@ -17,7 +17,7 @@ constructor new {i_w i_text args} {
 	${NS}::label  $w.l       -text [mc "Goto Line:"]
 	tentry  $w.ent \
 		-textvariable ${__this}::linenum \
-		-background lightgreen \
+		-background {#50fa7b} \
 		-validate key \
 		-validatecommand [cb _validate %P]
 	${NS}::button $w.bn      -text [mc Go] -command [cb _goto]

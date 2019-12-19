@@ -3278,7 +3278,7 @@ pack $ui_workdir -side left -fill both -expand 1
 textframe .vpane.files.index -height 100 -width 200
 tlabel .vpane.files.index.title \
 	-text [mc "Staged Changes (Will Commit)"] \
-	-background lightgreen -foreground black
+	-background {#50fa7b} -foreground black
 ttext $ui_index -background {#282a36} -foreground {#f8f8f2} \
 	-borderwidth 0 \
 	-width 20 -height 10 \
