@@ -3537,7 +3537,7 @@ bind_button3 .vpane.lower.diff.header.path "tk_popup $ctxm %X %Y"
 #
 textframe .vpane.lower.diff.body
 set ui_diff .vpane.lower.diff.body.t
-ttext $ui_diff -background white -foreground black \
+ttext $ui_diff -background {#282a36} -foreground {#f8f8f2} \
 	-borderwidth 0 \
 	-width 80 -height 5 -wrap none \
 	-font font_diff \
