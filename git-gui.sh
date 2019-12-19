@@ -3257,7 +3257,7 @@ pack .vpane -anchor n -side top -fill both -expand 1
 textframe .vpane.files.workdir -height 100 -width 200
 tlabel .vpane.files.workdir.title -text [mc "Unstaged Changes"] \
 	-background lightsalmon -foreground black
-ttext $ui_workdir -background white -foreground black \
+ttext $ui_workdir -background {#282a36} -foreground black \
 	-borderwidth 0 \
 	-width 20 -height 10 \
 	-wrap none \
