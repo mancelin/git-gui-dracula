@@ -2042,7 +2042,7 @@ static unsigned char file_question_bits[] = {
    0x62, 0x10, 0x02, 0x10, 0xfe, 0x1f};
 } -maskdata $filemask
 
-image create bitmap file_removed -background white -foreground red -data {
+image create bitmap file_removed -background white -foreground {#ff5555} -data {
 #define file_removed_width 14
 #define file_removed_height 15
 static unsigned char file_removed_bits[] = {
@@ -3570,21 +3570,21 @@ $ui_diff tag conf d_info -foreground blue -font font_diffbold
 $ui_diff tag conf d_cr -elide true
 $ui_diff tag conf d_@ -font font_diffbold
 $ui_diff tag conf d_+ -foreground {#50fa7b}
-$ui_diff tag conf d_- -foreground red
+$ui_diff tag conf d_- -foreground {#ff5555}
 
 $ui_diff tag conf d_++ -foreground {#50fa7b}
-$ui_diff tag conf d_-- -foreground red
+$ui_diff tag conf d_-- -foreground {#ff5555}
 $ui_diff tag conf d_+s \
 	-foreground {#50fa7b} \
 	-background {#e2effa}
 $ui_diff tag conf d_-s \
-	-foreground red \
+	-foreground {#ff5555} \
 	-background {#e2effa}
 $ui_diff tag conf d_s+ \
 	-foreground {#50fa7b} \
 	-background ivory1
 $ui_diff tag conf d_s- \
-	-foreground red \
+	-foreground {#ff5555} \
 	-background ivory1
 
 $ui_diff tag conf d< \
