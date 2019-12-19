@@ -2728,7 +2728,7 @@ if {[is_enabled multicommit] || [is_enabled singlecommit]} {
 
 # -- Repository Menu
 #
-menu .mbar.repository
+menu .mbar.repository -background {#44475a} -foreground {#f8f8f2}
 
 if {![is_bare]} {
 	.mbar.repository add command \
@@ -2819,7 +2819,7 @@ if {[is_MacOSX]} {
 
 # -- Edit Menu
 #
-menu .mbar.edit
+menu .mbar.edit -background {#44475a} -foreground {#f8f8f2}
 .mbar.edit add command -label [mc Undo] \
 	-command {catch {[focus] edit undo}} \
 	-accelerator $M1T-Z
@@ -2847,7 +2847,7 @@ menu .mbar.edit
 # -- Branch Menu
 #
 if {[is_enabled branch]} {
-	menu .mbar.branch
+	menu .mbar.branch -background {#44475a} -foreground {#f8f8f2}
 
 	.mbar.branch add command -label [mc "Create..."] \
 		-command branch_create::dialog \
@@ -2888,7 +2888,7 @@ proc commit_btn_caption {} {
 }
 
 if {[is_enabled multicommit] || [is_enabled singlecommit]} {
-	menu .mbar.commit
+	menu .mbar.commit -background {#44475a} -foreground {#f8f8f2}
 
 	if {![is_enabled nocommit]} {
 		.mbar.commit add checkbutton \
@@ -2960,7 +2960,7 @@ if {[is_enabled multicommit] || [is_enabled singlecommit]} {
 # -- Merge Menu
 #
 if {[is_enabled branch]} {
-	menu .mbar.merge
+	menu .mbar.merge -background {#44475a} -foreground {#f8f8f2}
 	.mbar.merge add command -label [mc "Local Merge..."] \
 		-command merge::dialog \
 		-accelerator $M1T-M
@@ -2975,7 +2975,7 @@ if {[is_enabled branch]} {
 # -- Transport Menu
 #
 if {[is_enabled transport]} {
-	menu .mbar.remote
+	menu .mbar.remote -background {#44475a} -foreground {#f8f8f2}
 
 	.mbar.remote add command \
 		-label [mc "Add..."] \
@@ -3004,7 +3004,7 @@ if {[is_MacOSX]} {
 #
 if {[is_enabled multicommit] || [is_enabled singlecommit]} {
 	set tools_menubar .mbar.tools
-	menu $tools_menubar
+	menu $tools_menubar -background {#44475a} -foreground {#f8f8f2}
 	$tools_menubar add separator
 	$tools_menubar add command -label [mc "Add..."] -command tools_add::dialog
 	$tools_menubar add command -label [mc "Remove..."] -command tools_remove::dialog
@@ -3017,7 +3017,7 @@ if {[is_enabled multicommit] || [is_enabled singlecommit]} {
 # -- Help Menu
 #
 .mbar add cascade -label [mc Help] -menu .mbar.help
-menu .mbar.help
+menu .mbar.help  -background {#44475a} -foreground {#f8f8f2}
 
 if {[is_MacOSX]} {
 	.mbar.apple add command -label [mc "About %s" [appname]] \
