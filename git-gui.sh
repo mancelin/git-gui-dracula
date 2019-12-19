@@ -2703,7 +2703,7 @@ set ui_comm {}
 
 # -- Menu Bar
 #
-menu .mbar -tearoff 0
+menu .mbar -tearoff 0 -background {#44475a} -foreground {#f8f8f2}
 if {[is_MacOSX]} {
 	# -- Apple Menu (Mac OS X only)
 	#
