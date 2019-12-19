@@ -720,7 +720,7 @@ proc rmsel_tag {text} {
 		-background [$text cget -background] \
 		-foreground [$text cget -foreground] \
 		-borderwidth 0
-	$text tag conf in_sel -background lightgray
+	$text tag conf in_sel -background {#44475a}
 	bind $text <Motion> break
 	return $text
 }
