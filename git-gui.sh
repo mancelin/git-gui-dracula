@@ -4151,7 +4151,7 @@ after 1 {
 	}
 
 	if {[is_enabled nocommitmsg]} {
-		$ui_comm configure -state disabled -background gray
+		$ui_comm configure -state disabled -background {#44475a}
 	}
 }
 if {[is_enabled multicommit] && ![is_config_false gui.gcwarning]} {
