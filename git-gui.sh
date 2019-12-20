@@ -3017,7 +3017,7 @@ if {[is_enabled multicommit] || [is_enabled singlecommit]} {
 # -- Help Menu
 #
 .mbar add cascade -label [mc Help] -menu .mbar.help
-menu .mbar.help  -background {#44475a} -foreground {#f8f8f2}
+menu .mbar.help -background {#44475a} -foreground {#f8f8f2}
 
 if {[is_MacOSX]} {
 	.mbar.apple add command -label [mc "About %s" [appname]] \
@@ -3227,16 +3227,20 @@ default {
 
 # -- Branch Control
 #
-${NS}::frame .branch
+${NS}::label .branch -background {#44475a}
 if {!$use_ttk} {.branch configure -borderwidth 1 -relief sunken}
 ${NS}::label .branch.l1 \
 	-text [mc "Current Branch:"] \
 	-anchor w \
-	-justify left
+	-justify left \
+	-background {#44475a} \
+	-foreground {#f8f8f2}
 ${NS}::label .branch.cb \
 	-textvariable current_branch \
 	-anchor w \
-	-justify left
+	-justify left \
+	-background {#44475a} \
+	-foreground {#f8f8f2}
 pack .branch.l1 -side left
 pack .branch.cb -side left -fill x
 pack .branch -side top -fill x
