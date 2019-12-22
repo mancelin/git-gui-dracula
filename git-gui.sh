@@ -3398,7 +3398,9 @@ if {![is_enabled nocommit]} {
 
 ${NS}::label $ui_coml \
 	-anchor w \
-	-justify left
+	-justify left \
+	-background {#44475a} \
+	-foreground {#f8f8f2}
 proc trace_commit_type {varname args} {
 	global ui_coml commit_type
 	switch -glob -- $commit_type {
