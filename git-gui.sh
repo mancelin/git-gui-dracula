@@ -3345,7 +3345,8 @@ if {$have_tk85} {
 ${NS}::frame .vpane.lower.commarea.buttons
 ${NS}::label .vpane.lower.commarea.buttons.l -text {} \
 	-anchor w \
-	-justify left
+	-justify left \
+	-background {#44475a}
 pack .vpane.lower.commarea.buttons.l -side top -fill x
 pack .vpane.lower.commarea.buttons -side left -fill y
 
