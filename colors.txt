@@ -1,0 +1,9 @@
+theme dracula https://github.com/dracula/dracula-theme/
+
+Background Ui {#44475a}
+Background    {#282a36}
+Current Line  {#44475a}
+Selection     {#44475a}
+Foreground    {#f8f8f2}
+Green         {#50fa7b}
+Red           {#ff5555}
