@@ -1,3 +1,12 @@
+# Git GUI - Dracula
+
+This is a modified version of the source of **git gui** to use the colors of the [https://draculatheme.com/](https://draculatheme.com/)
+
+This fork is based on **git-gui version 0.21.0.65.ge7cc-dirty**
+
+Screenshot :
+![GitHub Logo](/images/screenshot_0.png)
+
 # Git GUI - A graphical user interface for Git
 
 Git GUI allows you to use the [Git source control management
